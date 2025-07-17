@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Angular App (ng serve)",
+      "runtimeExecutable": "npm",
+      "args": [
+        "start"
+      ],
+      "cwd": "${workspaceFolder}/angular-app",
+      "outFiles": [
+        "${workspaceFolder}/angular-app/dist/angular-app/**/*.js",
+        "!**/node_modules/**"
+      ],
+      "console": "integratedTerminal"
+    }
+  ]
+}

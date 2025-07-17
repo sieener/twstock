@@ -1,0 +1,34 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "serve",
+			"type": "shell",
+			"command": "ng serve",
+			"group": "build",
+			"isBackground": true,
+			"problemMatcher": [
+				"$tsc"
+			],
+			"args": [
+				"--open"
+			]
+		},
+		{
+			"label": "Build Angular App for SSR",
+			"type": "npm",
+			"script": "build",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"options": {
+				"cwd": "${workspaceFolder}/angular-app"
+			},
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "Runs 'ng build' to compile the Angular application and SSR server."
+		}
+	]
+}
