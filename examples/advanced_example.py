@@ -3,6 +3,11 @@
 """
 Advanced example showing technical analysis for TSMC (2330)
 """
+import sys
+import os
+
+# Add the parent directory to the Python path
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import twstock
 from twstock import BestFourPoint
