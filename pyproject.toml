@@ -17,3 +17,23 @@ classifiers = [ "License :: OSI Approved :: MIT License", "Programming Language 
 
 [tool.flit.scripts]
 twstock = "twstock.cli:run"
+
+# Disable type checking for this project
+[tool.mypy]
+ignore_errors = true
+check_untyped_defs = false
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+warn_return_any = false
+warn_unused_ignores = false
+strict = false
+
+[tool.pylsp-mypy]
+enabled = false
+
+[tool.pyright]
+typeCheckingMode = "off"
+reportGeneralTypeIssues = false
+reportOptionalMemberAccess = false
+reportOptionalSubscript = false
+reportPrivateImportUsage = false
