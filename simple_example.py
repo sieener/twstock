@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# -*- coding: utf-8    -*-
 """
 Simple example to fetch and display Taiwan stock data for TSMC (2330)
 """
